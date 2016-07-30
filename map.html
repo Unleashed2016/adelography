@@ -9,28 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
+		<link href="css/bootstrap-slider.css" rel="stylesheet">
 
-        <script>
-                                function initialize() {
-                                    var mapProp = {
-                                        center:new google.maps.LatLng(-34.9287,138.5999),
-                                        zoom:11,
-                                        mapTypeId:google.maps.MapTypeId.ROADMAP
-                                    };
-                                    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                                }
-                            google.maps.event.addDomListener(window, 'load', initialize);
-                                </script>
 
-        <script>
-                                $("#ex8").slider({
-                                                 tooltip: 'always'
-                                                 });
-                                </script>
 
-        <style>
-            p {
+    <style type='text/css'>		
+		p {
                 color: white;
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -52,23 +36,32 @@
                 height: 300px;
                 overflow: scroll;
             }
+
         </style>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style type='text/css'>
+		/* Example 1 custom styles */
+		#ex1Slider .slider-selection {
+   			background: #BABABA;
+			width: 100%!important;
+  		}
+    </style>
+
     </head>
 
     <body>
+
         <div align="middle">
             <img src="adelHorizontal.png" alt="Title" align="middle">
         </div>
-
-        <div style="float: left; width: 50%">
+        <div style="float: left; width: 50%;">
             <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/martinn16.102ll43k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibWFydGlubjE2IiwiYSI6ImNpcjhuajdrNjAxMnpnNG05dHVveTE0YnMifQ.O0Tm0CYVfPBUj73fH0Nxew'></iframe>
-            <input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"
-            />
-        </div>
+
+				<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" width='100%'/>
+
+		</div>
+
+
+
 
         <div style="float: right; width: 50%">
             <h3>Key Events</h3>
@@ -97,8 +90,42 @@
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+		<script type='text/javascript' src="js/jquery.min.js"></script>
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+		<script type='text/javascript' src="js/bootstrap-slider.js"></script>
+
+<script type='text/javascript'>			
+			function initialize() {
+                                    var mapProp = {
+                                        center:new google.maps.LatLng(-34.9287,138.5999),
+                                        zoom:11,
+                                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                                    };
+                                    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                                }
+                            google.maps.event.addDomListener(window, 'load', initialize);
+
+		</script>
+    <script type='text/javascript'>
+    	$(document).ready(function() {
+    		/* Example 1 */
+	    	$('#ex1').slider({
+	          	formatter: function(value) {
+	            	return 'Current value: ' + value;
+	          	}
+	        });
+
+		});
+    </script>
+
 
     </body>
 
