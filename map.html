@@ -1,132 +1,129 @@
 <!DOCTYPE html>
 <html>
 
-<body class="fill" background="adelBackground.jpg">
+    <body class="fill" background="adelBackground.jpg">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-slider.css" rel="stylesheet">
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="css/bootstrap-slider.css" rel="stylesheet">
 
+            <style type='text/css'>
+                p {
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
 
+                h3 {
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding-left: 0.5cm;
+                }
 
-    <style type='text/css'>		
-		p {
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            h3 {
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                padding-left: 0.5cm;
-            }
-            
-            li {
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                line-height: 150%;
-            }
-            
-            div.scroll {
-                width: 100%;
-                height: 300px;
-                overflow: scroll;
-            }
+                li {
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    line-height: 150%;
+                }
 
-        </style>
-    <style type='text/css'>
-		/* Example 1 custom styles */
-		#ex1Slider .slider-selection {
-   			background: #BABABA;
-			width: 100%!important;
-  		}
-    </style>
+                div.scroll {
+                    width: 100%;
+                    height: 300px;
+                    overflow: scroll;
+                }
 
-    </head>
+            </style>
+            <style type='text/css'>
+                /* Example 1 custom styles */
+                #ex1Slider .slider-selection {
+                    background: #BABABA;
+                    width: 100%!important;
+                }
 
-    <body>
+            </style>
 
-        <div align="middle">
-            <img src="adelHorizontal.png" alt="Title" align="middle">
-        </div>
-        <div style="float: left; width: 50%;">
-            <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/martinn16.102ll43k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibWFydGlubjE2IiwiYSI6ImNpcjhuajdrNjAxMnpnNG05dHVveTE0YnMifQ.O0Tm0CYVfPBUj73fH0Nxew'></iframe>
+        </head>
 
-				<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" width='100%'/>
+        <body>
 
-		</div>
-
-
-
-
-        <div style="float: right; width: 50%">
-            <h3>Key Events</h3>
-
-            <div class="scroll">
-                <ul>
-                    <li>1836 - Arrival of Colonel Light in the ship the Rapid.</li>
-                    <li>1836 - Adelaide Founded</li>
-                    <li>1836 - Town Acres up for auction.</li>
-                    <li>1837 - House near Trinity Church made into Adelaide's first hospital.</li>
-                    <li>1838 - Establishment of the SA Police Force.</li>
-                    <li>1838 - First theatre opens above Adelaide Tavern.</li>
-                    <li>1839 - Foundation of Adelaide's Chamber of Commerce.</li>
-                    <li>1839 - Completion of first part of Government House.</li>
-                    <li>1840 - Completion of first part of Adelaide Gaol</li>
-                    <li>1841 - Quarry on north side of Government House opens</li>
-                    <li>1842 - Kingston Map published</li>
-                    <li>1843 - Collapse of Adelaide City Council (insolvent)</li>
-                    <li>1843 - SA government passes first legislation to deal with poverty</li>
-                    <li>1843 - City administered by Police commissioner and magistrate</li>
-                    <li>1844 - Twenty five Jews living in SA</li>
-                    <li>1845 - Copper at Burra discovered</li>
-                    <li>1845 - First catholic burial in 4 acre sector of West Terrace Cemetery</li>
-                    <li>1846 - Catholic Bishop's Palace built on West Terrace</li>
-                </ul>
+            <div align="middle">
+                <img src="adelHorizontal.png" alt="Title" align="middle">
             </div>
-        </div>
+            <div style="float: left; width: 50%;">
+                <iframe
+                    width='100%'
+                    height='500px'
+                    frameBorder='0'
+                    src='https://a.tiles.mapbox.com/v4/martinn16.102ll43k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibWFydGlubjE2IiwiYSI6ImNpcjhuajdrNjAxMnpnNG05dHVveTE0YnMifQ.O0Tm0CYVfPBUj73fH0Nxew'></iframe>
 
+                <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" width='100%'/>
 
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
+            </div>
 
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-		<script type='text/javascript' src="js/jquery.min.js"></script>
-        <script type='text/javascript' src="js/bootstrap.min.js"></script>
-		<script type='text/javascript' src="js/bootstrap-slider.js"></script>
+            <div style="float: right; width: 50%">
+                <h3>Key Events</h3>
 
-<script type='text/javascript'>			
-			function initialize() {
-                                    var mapProp = {
-                                        center:new google.maps.LatLng(-34.9287,138.5999),
-                                        zoom:11,
-                                        mapTypeId:google.maps.MapTypeId.ROADMAP
-                                    };
-                                    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                                }
-                            google.maps.event.addDomListener(window, 'load', initialize);
+                <div class="scroll">
+                    <ul>
+                        <li>1836 - Arrival of Colonel Light in the ship the Rapid.</li>
+                        <li>1836 - Adelaide Founded</li>
+                        <li>1836 - Town Acres up for auction.</li>
+                        <li>1837 - House near Trinity Church made into Adelaide's first hospital.</li>
+                        <li>1838 - Establishment of the SA Police Force.</li>
+                        <li>1838 - First theatre opens above Adelaide Tavern.</li>
+                        <li>1839 - Foundation of Adelaide's Chamber of Commerce.</li>
+                        <li>1839 - Completion of first part of Government House.</li>
+                        <li>1840 - Completion of first part of Adelaide Gaol</li>
+                        <li>1841 - Quarry on north side of Government House opens</li>
+                        <li>1842 - Kingston Map published</li>
+                        <li>1843 - Collapse of Adelaide City Council (insolvent)</li>
+                        <li>1843 - SA government passes first legislation to deal with poverty</li>
+                        <li>1843 - City administered by Police commissioner and magistrate</li>
+                        <li>1844 - Twenty five Jews living in SA</li>
+                        <li>1845 - Copper at Burra discovered</li>
+                        <li>1845 - First catholic burial in 4 acre sector of West Terrace Cemetery</li>
+                        <li>1846 - Catholic Bishop's Palace built on West Terrace</li>
+                    </ul>
+                </div>
+            </div>
 
-		</script>
-    <script type='text/javascript'>
-    	$(document).ready(function() {
-    		/* Example 1 */
-	    	$('#ex1').slider({
-	          	formatter: function(value) {
-	            	return 'Current value: ' + value;
-	          	}
-	        });
+            <!-- script src="http://maps.googleapis.com/maps/api/js"></script -->
 
-		});
-    </script>
+            <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+            <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+            <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <!-- script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script -->
+            <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+            <script type='text/javascript' src="js/jquery.min.js"></script>
+            <script type='text/javascript' src="js/bootstrap.min.js"></script>
+            <script type='text/javascript' src="js/bootstrap-slider.js"></script>
 
+            <script type='text/javascript'>
+                function initialize() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(-34.9287, 138.5999),
+                        zoom: 11,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+            <script type='text/javascript'>
+                $(document).ready(function() {
+                    /* Example 1 */
+                    $('#ex1').slider({
+                        formatter: function(value) {
+                            return 'Current value: ' + value;
+                        }
+                    });
 
-    </body>
+                });
+            </script>
 
-</html>
+        </body>
+
+    </html>
