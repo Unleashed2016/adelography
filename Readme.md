@@ -4,7 +4,7 @@ Tag-line: Adelaide's story, an incredible tale of discovery, adventure and perse
 
 ADELography is a temporal and spatial interactive story telling tool. Historical datasets help tell the story of Adelaide and South Australia from the beginning of recorded history. We step through time learning about the key events of South Australia, and see the migration of people around the surrounding area of Adelaide.
 
-Through this interactive experience, new and existing residents can gain a deeper historical understanding of our city and thereby strengthen their sense of community and belonging
+Through this interactive experience, new and existing residents can gain a deeper historical understanding of our city and thereby strengthen their sense of community and belonging.
 
 Team name: Bob's gang
 
