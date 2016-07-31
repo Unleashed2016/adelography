@@ -6,11 +6,11 @@ ADELography is a temporal and spatial interactive story telling tool. Historical
 
 Team name: Bob's gang
 
-Team members: Matt Cejko, Martin Nobis, Muhammad Pavel, Mizanur Rahman, Asheshwor Shrestha, Oshim Somers
+Team members: Martin Nobis, Matt Cejko, Asheshwor Shrestha, Mizan Rahman, Muhammad Pavel, Oshim Somers.
 
-Demo url:
+Demo url: https://github.com/Unleashed2016/adelography/
 
-Video url:
+Video url: https://youtu.be/YsuRvcJgszY
 
 Hackerspace url: https://2016.hackerspace.govhack.org/content/adelography-story-adelaide
 
