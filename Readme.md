@@ -1,8 +1,8 @@
 ## ADEL ography
 
-Tag-line: The story of adelaide
+Tag-line: The story of Adelaide
 
-ADELography is a temporal and spatial interactive story telling tool. Histroical
+ADELography is a temporal and spatial interactive story telling tool. Historical
 datasets help tell the story of Adelaide and South Australia from the beginning
 of recorded history. We step through time learning about the key events of
 South Australia, and see the migration of people around the surrounding area of
