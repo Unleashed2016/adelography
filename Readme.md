@@ -10,11 +10,11 @@ Adelaide.
 
 Team name: Bob's gang
 
-Team members:
+Team members: Martin Nobis, Matt Cejko, Asheshwor Shrestha, Mizan Rahman, Muhammad Pavel, Oshim Somers.
 
 Demo url:
 
-Video url:
+Video url: https://youtu.be/YsuRvcJgszY
 
 Hackerspace url: https://2016.hackerspace.govhack.org/content/adelography-story-adelaide
 
