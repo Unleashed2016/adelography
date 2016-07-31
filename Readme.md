@@ -34,6 +34,11 @@ http://data.sa.gov.au/data/dataset/adelaide-city-council-key-historical-dates
 ### Local Event Location:
 Adelaide
 
+### APIs Used:
+* Google Maps JS API
+
+* D3.js: Used for adding data overlay on map
+
 ### Script
 Adelaide's story, an incredible tale of discovery, adventure and perseverance.
 Join us on this interactive tale with AdelOgraphy!
